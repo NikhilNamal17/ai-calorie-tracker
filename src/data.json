@@ -1,0 +1,47 @@
+[
+    {
+        "name": "vada_pav",
+        "vals": {
+            "Toatal Calories": 155,
+            "Carbs": 55,
+            "Fats": 9,
+            "Protein": 3
+        }
+    },
+    {
+        "name": "pav_bhaji",
+        "vals": {
+            "Toatal Calories": 544,
+            "Carbs": 46,
+            "Fats": 34,
+            "Protein": 13
+        }
+    },
+    {
+        "name": "samosa",
+        "vals": {
+            "Toatal Calories": 187,
+            "Carbs": 13,
+            "Fats": 7,
+            "Protein": 1
+        }
+    },
+    {
+        "name": "dosa",
+        "vals": {
+            "Toatal Calories": 168,
+            "Carbs": 29,
+            "Fats": 3.7,
+            "Protein": 3.9
+        }
+    },
+    {
+        "name": "idli",
+        "vals": {
+            "Toatal Calories": 58,
+            "Carbs": 12,
+            "Fats": 0.4,
+            "Protein": 1.6
+        }
+    }
+]
