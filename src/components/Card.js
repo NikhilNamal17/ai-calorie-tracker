@@ -24,7 +24,7 @@ const Card = ({ body, imgSrc, imgAlt, val }) => {
                     val && val.map(itm => {
                         return (
                             <div key={itm.Fats}>
-                                <h5 key={itm["Toatal Calories"]} className="card-text"> Toatal Calories(per 100g) {itm["Toatal Calories"]}</h5>
+                                <h5 key={itm["Toatal Calories"]} className="card-text"> Total Calories(per 100g) {itm["Toatal Calories"]}</h5>
                                 <h6 key={itm.Carbs} className="card-text">
                                     Carbs: {itm.Carbs}g
                                     <br />
