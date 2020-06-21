@@ -6,9 +6,6 @@ const Card = ({ body, imgSrc, imgAlt, val }) => {
 
 
 
-
-
-
     return (
         <div className="card col-md-auto" style={{
 

@@ -44,7 +44,7 @@ const FileUpload = () => {
                     );
 
                     // Clear percentage
-                    setTimeout(() => setUploadPercentage(0), 20000);
+                    setTimeout(() => setUploadPercentage(0), 10000);
                 }
             });
 
@@ -74,7 +74,7 @@ const FileUpload = () => {
 
 
     return (
-        <div className="container col-md-auto">
+        <div className="container col-md-8">
             {message ? <Message msg={message} /> : null}
             <form onSubmit={onSubmit}>
                 <div className='custom-file mb-4'>
@@ -87,15 +87,23 @@ const FileUpload = () => {
                     <label className='custom-file-label' htmlFor='customFile'>
                         {filename}
                     </label>
+
                 </div>
 
-                <Progress percentage={uploadPercentage} />
+                {uploadPercentage ? <Progress percentage={uploadPercentage} /> : null}
 
-                <input
-                    type='submit'
-                    value='Upload'
-                    className='btn btn-primary btn-block mt-4'
-                />
+
+                <div className="container col-md-6">
+
+
+                    <input
+                        type='submit'
+                        value='Upload'
+                        className='btn btn-primary btn-block mt-4'
+                    />
+                </div>
+
+
             </form>
 
 
