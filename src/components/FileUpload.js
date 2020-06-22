@@ -43,8 +43,8 @@ const FileUpload = () => {
                         )
                     );
 
-                    // Clear percentage
-                    setTimeout(() => setUploadPercentage(0), 10000);
+                    // // Clear percentage
+                    // setTimeout(() => setUploadPercentage(0), 10000);
                 }
             });
 
@@ -74,7 +74,10 @@ const FileUpload = () => {
 
 
     return (
-        <div className="container col-md-8">
+        <div className="container col-md-8" style={{
+
+            paddingBottom: "100px"
+        }}>
             {message ? <Message msg={message} /> : null}
             <form onSubmit={onSubmit}>
                 <div className='custom-file mb-4'>
@@ -116,6 +119,13 @@ const FileUpload = () => {
                     </div>
                 </div>
             ) : null}
+
+            {/* <div>
+                <br />
+                <br />
+                <br />
+                <br />
+            </div> */}
         </div>
     );
 };

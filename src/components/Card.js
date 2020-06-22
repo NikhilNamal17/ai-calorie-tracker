@@ -13,7 +13,11 @@ const Card = ({ body, imgSrc, imgAlt, val }) => {
         }}>
             <img className="card-img-top" src={imgSrc} alt={imgAlt} />
             <div className="card-body">
-                <h3 className="card-text">  {body}</h3>
+                <h3 className="card-text" style={{
+
+                    fontFamily: 'Montserrat'
+
+                }}>  {body}</h3>
 
             </div>
             <div className="card-body">
@@ -21,16 +25,23 @@ const Card = ({ body, imgSrc, imgAlt, val }) => {
                     val && val.map(itm => {
                         return (
                             <div key={itm.Fats}>
-                                <h5 key={itm["Toatal Calories"]} className="card-text"> Total Calories(per 100g) {itm["Toatal Calories"]}</h5>
-                                <h6 key={itm.Carbs} className="card-text">
+                                <h5 key={itm["Toatal Calories"]} className="card-text" style={{
+
+                                    fontFamily: 'Montserrat'
+
+                                }}> Total Calories(per 100g) {itm["Toatal Calories"]}</h5>
+                                <h6 key={itm.Carbs} className="card-text" style={{
+
+                                    fontFamily: "Roboto"
+
+                                }}>
                                     Carbs: {itm.Carbs}g
                                     <br />
                                     Fats: {itm.Fats}g
                                     <br />
                                     Protein: {itm.Protein}g
                                     <br />
-                                    <br />
-                                    <br />
+
 
                                 </h6>
 
